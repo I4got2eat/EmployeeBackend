@@ -16,7 +16,6 @@ public class User {
     @Column(nullable = false)
     private String phoneNumber;
 
-    // getters and setters
 
 
 }

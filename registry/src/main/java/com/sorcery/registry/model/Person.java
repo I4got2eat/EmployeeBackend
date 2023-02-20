@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-
 import java.util.UUID;
+
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,7 +14,9 @@ import java.util.UUID;
 @SuperBuilder(toBuilder = true)
 public class Person {
     private UUID id;
+
     private String name;
+
     private String email;
     private String number;
 }

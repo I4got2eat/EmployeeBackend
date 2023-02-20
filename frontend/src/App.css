@@ -1,0 +1,94 @@
+.title {
+  text-align: center;
+  color: white;
+  background-color: black;
+  height: 6rem;
+  padding-top: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.UploadField {
+  margin-left: 36%;
+  margin-top: 10px;
+  height: 60px;
+  font-size: 40px;
+  border: 5px solid black;
+  width: 28%;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  height: 15px;
+  margin-bottom: 1%;
+  display: flex;
+}
+
+form {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: aqua;
+  margin-top: 1%;
+  margin-left: 48%;
+  margin-bottom: 1%;
+  height: 50px;
+  width: 100px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.titles {
+  display: flex;
+  background-color: rgb(133, 130, 135);
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.infoField {
+  display: flex;
+}
+h3 {
+  padding-left: 10px;
+  max-width: 240px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.email {
+  max-width: 400px;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+  max-width: 45%;
+  margin-left: 27.5%;
+}
+
+.logo {
+  height: 20px;
+  margin-left: 6px;
+}
+
+.content{
+  align-items: center;
+  justify-content: center;
+}
+
+.number{
+  text-align: right;
+  padding-right: 8px;
+}

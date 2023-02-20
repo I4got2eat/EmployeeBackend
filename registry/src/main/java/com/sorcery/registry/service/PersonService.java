@@ -18,6 +18,7 @@ public class PersonService {
 
     public void addPerson(Person person){
 
+
         Person person1 = person.toBuilder().id(UUID.randomUUID()).build();
         repository.insertPerson(person1);
     }
@@ -30,14 +31,7 @@ public class PersonService {
     public void deletePeople(){
         repository.deleteAllPeople();
     }
-//
-//    public List<Person> getPeople(){
-//        return repository.getPeople();
-//    }
-//
-//    public void deletePeople(){
-//        repository.deletePeople();
-//    }
+
 
 
 

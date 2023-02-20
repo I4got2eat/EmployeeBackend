@@ -24,6 +24,8 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	implementation group: 'javax.validation', name: 'validation-api', version: '1.0.0.GA'
+
 }
 
 
