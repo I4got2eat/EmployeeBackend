@@ -13,11 +13,17 @@ com.h2database:h2
 mybatis-spring-boot-starter:3.0.0
 org.projectlombok:lombok
 
-Created by Mykolas Sanda
+
+tools:
+JDK 17
+node v14.20.1
+gradle tool
+
+
 
 
 To start the application 
-Open up your IDE of choice (eclipse or inteliJ)
+Open up your IDE of choice (eclipse or intelij)
 wait for application to configure
 navigate to 
 ```
@@ -28,7 +34,7 @@ right click and press
 "Run EmployeeCsvApplication.java"
 ```
 then
-navigate to folder frontend
+navigate to 
 open up the console in the folder and run 
 ```
 npm install
@@ -38,4 +44,7 @@ after completion run
 ```
 npm start
 ```
-all thats left is to Proceed to [localhost:3000](http://localhost:3000/) in the web.
+Proceed to [localhost:3000](http://localhost:3000/) in the web and thats it.
+
+
+Created by Mykolas Sanda
