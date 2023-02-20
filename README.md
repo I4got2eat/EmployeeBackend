@@ -24,4 +24,4 @@ right click and press "Run EmployeeCsvApplication.java"
 
 then
 Open the front end folder open up console and run npm start:
-Proceed to localhost:3000 in the web and thats it.
+Proceed to [localhost:3000](http://localhost:3000/) in the web and thats it.
