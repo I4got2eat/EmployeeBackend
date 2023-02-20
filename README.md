@@ -14,3 +14,12 @@ mybatis-spring-boot-starter:3.0.0
 org.projectlombok:lombok
 
 Created by Mykolas Sanda
+
+
+To start the application navigate to 
+registry/src/main/java/com/sorcery/registry/EmployeeCsvApplication.java
+right click and press "Run EmployeeCsvApplication.java"
+
+then
+Open the front end folder open up console and run npm start:
+Proceed to localhost:3000 in the web and thats it.
