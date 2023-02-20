@@ -48,3 +48,7 @@ Proceed to [localhost:3000](http://localhost:3000/) in the web and thats it.
 
 
 Created by Mykolas Sanda
+
+
+Implementation:
+Used Spring Boot as the backend server with an in-memory H2 database and MyBatis tool for SQL commands. This choice allowed me to ensure secure and efficient data storage and retrieval. For the frontend, I used React.js, and specifically utilized the useState and useEffect hooks for handling state updates and fetching data respectively. Additionally, I utilized the fetch method to handle DELETE, POST, and GET requests to and from the database, which made the communication between the frontend and backend seamless.
