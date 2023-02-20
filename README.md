@@ -17,7 +17,9 @@ Created by Mykolas Sanda
 
 
 To start the application navigate to 
+```
 registry/src/main/java/com/sorcery/registry/EmployeeCsvApplication.java
+```
 right click and press "Run EmployeeCsvApplication.java"
 
 then
