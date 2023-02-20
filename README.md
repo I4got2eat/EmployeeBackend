@@ -16,12 +16,26 @@ org.projectlombok:lombok
 Created by Mykolas Sanda
 
 
-To start the application navigate to 
+To start the application 
+Open up your IDE of choice (eclipse or intelij)
+wait for application to configure
+navigate to 
 ```
 registry/src/main/java/com/sorcery/registry/EmployeeCsvApplication.java
 ```
-right click and press "Run EmployeeCsvApplication.java"
-
+right click and press 
+```
+"Run EmployeeCsvApplication.java"
+```
 then
-Open the front end folder open up console and run npm start:
+navigate to 
+open up the console in the folder and run 
+```
+npm install
+```
+wait for it to install all modules
+after completion run
+```
+npm start
+```
 Proceed to [localhost:3000](http://localhost:3000/) in the web and thats it.
