@@ -17,7 +17,7 @@ Created by Mykolas Sanda
 
 
 To start the application 
-Open up your IDE of choice (eclipse or intelij)
+Open up your IDE of choice (eclipse or inteliJ)
 wait for application to configure
 navigate to 
 ```
@@ -28,7 +28,7 @@ right click and press
 "Run EmployeeCsvApplication.java"
 ```
 then
-navigate to 
+navigate to folder frontend
 open up the console in the folder and run 
 ```
 npm install
@@ -38,4 +38,4 @@ after completion run
 ```
 npm start
 ```
-Proceed to [localhost:3000](http://localhost:3000/) in the web and thats it.
+all thats left is to Proceed to [localhost:3000](http://localhost:3000/) in the web.
