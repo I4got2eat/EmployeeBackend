@@ -1,6 +1,6 @@
 # EmployeeCSV
 Full stack application for sorcery academy
-that stores CSV files contents.
+that stores CSV file contents.
 built using react.js and spring boot.
 registry is the backend folder.
 frontend it the frontend folder.
