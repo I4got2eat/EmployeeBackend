@@ -14,11 +14,7 @@ public class PersonService {
 
     private final PersonRepository repository;
 
-
-
     public void addPerson(Person person){
-
-
         Person person1 = person.toBuilder().id(UUID.randomUUID()).build();
         repository.insertPerson(person1);
     }

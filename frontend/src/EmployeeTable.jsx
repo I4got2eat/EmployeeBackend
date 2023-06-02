@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 
 export const EmployeeTable = () => {
+  var key=0;
   const [data, setData] = useState([]);
-  let key = 0;
   var request = new Request("http://localhost:8080/database/get", {
     method: "GET",
     headers: new Headers({
@@ -20,9 +20,6 @@ export const EmployeeTable = () => {
         setData(resJson);
       });
 
-    for (var item in data) {
-      console.log(item + it);
-    }
   }, []);
 
   return (
@@ -34,11 +31,11 @@ export const EmployeeTable = () => {
             <h2 className="email"> Email</h2>
             <h2 className="number">Number</h2>
           </div>
-          {data.map((person) => (
+          {data.map(({name, email, number }) => (
             <div className="infoField" key={key++}>
-              <h3>{person.name}</h3>
-              <h3 className="email">{person.email}</h3>
-              <h3 className="number" >{person.number}</h3>
+              <h3>{name}</h3>
+              <h3 className="email">{email}</h3>
+              <h3 className="number" >{number}</h3>
             </div>
           ))}
         </div>

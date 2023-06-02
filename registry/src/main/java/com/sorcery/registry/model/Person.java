@@ -14,9 +14,7 @@ import java.util.UUID;
 @SuperBuilder(toBuilder = true)
 public class Person {
     private UUID id;
-
     private String name;
-
     private String email;
     private String number;
 }
