@@ -11,24 +11,17 @@ import java.util.UUID;
 @AllArgsConstructor
 @Service
 public class PersonService {
-
     private final PersonRepository repository;
-
     public void addPerson(Person person){
-        Person person1 = person.toBuilder().id(UUID.randomUUID()).build();
-        repository.insertPerson(person1);
+        person = person.toBuilder().id(UUID.randomUUID()).build();
+        repository.insertPerson(person);
     }
-
     public List<Person> getPeople()
     {
         return repository.getPeople();
     }
-
     public void deletePeople(){
         repository.deleteAllPeople();
     }
-
-
-
 
 }

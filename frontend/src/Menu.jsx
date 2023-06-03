@@ -1,16 +1,13 @@
 import React, { useState, useCallback } from "react";
 import Papa from "papaparse";
 import { EmployeeTable } from "./EmployeeTable";
+import { EMPLOYEES_URL } from "./URLS";
 
-const DELETE_URL = "http://localhost:8080/database/delete";
-const POST_URL = "http://localhost:8080/database/post";
-
-const Upload = () => {
+const Menu = () => {
   const [state, setState] = useState({
     error: false,
     data: [],
     toggle: false,
-    empty: false,
   });
 
   const handleChange = useCallback((e) => {
@@ -20,16 +17,16 @@ const Upload = () => {
   const handleUpload = (e) => {
     setState((prevState) => ({
       ...prevState,
-      empty: false,
       toggle: false,
       error: false,
     }));
 
-    fetch(DELETE_URL, {
+    //optional
+    fetch(EMPLOYEES_URL, {
       method: "DELETE",
       body: null,
     });
-
+    //---
     Papa.parse(e.target.files[0], {
       header: true,
       skipEmptyLines: true,
@@ -37,12 +34,12 @@ const Upload = () => {
         const dataArray = result.data.map((element) => JSON.stringify(element));
 
         if (dataArray.length === 0) {
-          setState((prevState) => ({ ...prevState, empty: true }));
+          setState((prevState) => ({ ...prevState, error: true }));
           return;
         }
 
         const fetchPromises = dataArray.map((dataItem) =>
-          fetch(POST_URL, {
+          fetch(EMPLOYEES_URL, {
             method: "POST",
             headers: {
               Accept: "application/json",
@@ -53,20 +50,11 @@ const Upload = () => {
         );
 
         Promise.allSettled(fetchPromises).then((results) => {
-          const hasError = results.some(
-            (result) =>
-              result.status === "rejected" ||
-              ( result.value.ok !== true)
-          );
-            if(hasError){
-            setState((prevState) => ({
-              ...prevState,
-              error: true,
-              }));
+          setState((prevState) =>({
+            ...prevState,
+            error: results.some((result) => result.status === "rejected" || result.value.ok === false)
+          }))
             setState((prevState) => ({ ...prevState, toggle: true }));
-           }else{
-            setState((prevState) => ({ ...prevState, toggle: true }));
-           }
         });
       },
     });
@@ -83,17 +71,16 @@ const Upload = () => {
         />
       </form>
       <button onClick={() => handleUpload(state.data)} type="button">
-        Upload
+        Upload & Fetch
       </button>
       {state.error && (
         <h2 className="error">
-          The file contains illegal or empty values
+          The file contains illegal values or is empty
         </h2>
       )}
-
       {state.toggle && <EmployeeTable />}
     </>
   );
 };
 
-export default Upload;
+export default Menu;

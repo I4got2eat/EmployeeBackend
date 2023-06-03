@@ -1,29 +1,24 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { EMPLOYEES_URL } from "./URLS";
 
 export const EmployeeTable = () => {
-  var key=0;
   const [data, setData] = useState([]);
-  var request = new Request("http://localhost:8080/database/get", {
-    method: "GET",
-    headers: new Headers({
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    }),
-  });
-
   useEffect(() => {
-    fetch(request)
+    fetch(EMPLOYEES_URL, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
       .then((res) => res.json())
-      .then((resJson) => {
-        console.log(resJson.message);
-        setData(resJson);
+      .then((resJson) => setData(resJson))
+      .catch((error) => {
+        console.error("Error fetching data:", error);
       });
-
   }, []);
 
   return (
-    <>
       <div className="content">
         <div className="main">
           <div className="titles">
@@ -31,15 +26,14 @@ export const EmployeeTable = () => {
             <h2 className="email"> Email</h2>
             <h2 className="number">Number</h2>
           </div>
-          {data.map(({name, email, number }) => (
-            <div className="infoField" key={key++}>
+          {data.map(({name, email, number }, index) => (
+            <div className="infoField" key={index}>
               <h3>{name}</h3>
               <h3 className="email">{email}</h3>
-              <h3 className="number" >{number}</h3>
+              <h3 className="number">{number}</h3>
             </div>
           ))}
         </div>
       </div>
-    </>
   );
 };

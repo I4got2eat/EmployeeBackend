@@ -1,6 +1,6 @@
 import "./App.css";
 import { EmployeeTable } from "./EmployeeTable";
-import Upload from "./Menu";
+import Menu from "./Menu";
 function App() {
   return (
     <>
@@ -9,7 +9,7 @@ function App() {
           <h1>Employee interface</h1>
         </a>
       </div>
-      <Upload />
+      <Menu />
       <div
         style={{
           textAlign: "center",

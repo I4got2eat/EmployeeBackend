@@ -7,16 +7,13 @@
 
     @Mapper
     public interface PersonRepository{
-        @Insert(" INSERT INTO people (id, name, email, number) VALUES (#{person.id}, #{person.name}, #{person.email}, #{person.number})")
+        @Insert("INSERT INTO people (id, name, email, number) VALUES (#{person.id}, #{person.name}, #{person.email}, #{person.number})")
         void insertPerson(@Param("person") Person person );
 
-        @Select("SELECT * FROM people")
+        @Select("SELECT id, name, email, number FROM people")
         List<Person> getPeople();
 
         @Delete("DELETE FROM people")
         void deleteAllPeople();
-
-
-
 
     }
