@@ -8,6 +8,7 @@ const Menu = () => {
     error: false,
     data: [],
     toggle: false,
+    isLoading: false,
   });
 
   const handleChange = useCallback((e) => {
@@ -19,14 +20,14 @@ const Menu = () => {
       ...prevState,
       toggle: false,
       error: false,
+      isLoading: true
     }));
 
-    //optional
     fetch(EMPLOYEES_URL, {
       method: "DELETE",
       body: null,
     });
-    //---
+
     Papa.parse(e.target.files[0], {
       header: true,
       skipEmptyLines: true,
@@ -78,7 +79,7 @@ const Menu = () => {
           The file contains illegal values or is empty
         </h2>
       )}
-      {state.toggle && <EmployeeTable />}
+      {state.toggle && <EmployeeTable/>}
     </>
   );
 };

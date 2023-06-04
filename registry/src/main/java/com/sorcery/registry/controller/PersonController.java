@@ -2,6 +2,7 @@ package com.sorcery.registry.controller;
 
 import com.sorcery.registry.exception.ApiRequestException;
 import com.sorcery.registry.model.Person;
+import com.sorcery.registry.repository.PersonRepository;
 import com.sorcery.registry.service.PersonService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -15,6 +16,7 @@ import java.util.List;
 public class PersonController {
 
     public final PersonService personService;
+    public final PersonRepository repo;
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
@@ -35,5 +37,7 @@ public class PersonController {
     public void deletePeople(){
         personService.deletePeople();
     }
+
+
 
 }

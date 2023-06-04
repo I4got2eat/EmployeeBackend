@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c90f4143-70ad-4462-a0ec-31f0a0032a7d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/EmployeeTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/EmployeeTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/java/com/sorcery/registry/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/registry/src/main/java/com/sorcery/registry/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/java/com/sorcery/registry/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/registry/src/main/java/com/sorcery/registry/repository/PersonRepository.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QkU1rLauE44m2NWWLAK9tITs2j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c90f4143-70ad-4462-a0ec-31f0a0032a7d" name="Changes" comment="" />
+      <created>1685896861187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685896861187</updated>
+      <workItem from="1685896864851" duration="9000" />
+    </task>
+    <servers />
+  </component>
+</project>
